@@ -1,4 +1,4 @@
-# Stepper-Motor-Behavior-on-an-Oscilloscope
+# Stepper-Motor-External-Interrupt
 the rise and fall cycles of a stepper motor going clockwise, stopping and going counterclockwise can be visualized on an oscilloscope
 
 https://github.com/user-attachments/assets/cb312d16-0589-43d1-a769-4199c75ca09b
