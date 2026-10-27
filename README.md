@@ -3,5 +3,6 @@ the rise and fall cycles of a stepper motor going clockwise, stopping and going 
 
 
 
-https://github.com/user-attachments/assets/cb312d16-0589-43d1-a769-4199c75ca09b
-ffmpeg -i IMG_8462.mov -vf "tonemap=hable,eq=saturation=1.2" -c:v libx264 -crf 22 output.mp4
+ffmpeg -i "https://github.com/user-attachments/assets/cb312d16-0589-43d1-a769-4199c75ca09b" \
+  -vf "zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p" \
+  -c:v libx264 -crf 22 -preset medium -movflags +faststart output.mp4
